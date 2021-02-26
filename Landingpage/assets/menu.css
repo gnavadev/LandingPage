@@ -1,0 +1,68 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.02rem solid var(--light-gray-color);
+    z-index: 1;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color: var(--primary-color)
+}
+
+.menu h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu-content {
+    display: flex;
+    /*O padrao da direcao dos items do display flex , eh row , por isso foi usado para o menu*/
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+}
+
+.menu ul li a {
+    display: block;
+    /*Usado porque no padrao o A tem display inline, o que faz ele nao se ajustar ao container*/
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    /*com position absolute , a relacao eh com o navegador , entao como foi selecionado largura 100% , foi 100% da largura do navegador*/
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--secondary-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+.menu-spacing {
+    height: 6.5rem;
+}
+
+.close-menu {
+    display: none;
+}

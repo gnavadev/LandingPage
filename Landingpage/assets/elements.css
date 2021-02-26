@@ -1,0 +1,168 @@
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            html {
+                font-size: 62.5%;
+                /*Lembrando que o tamanho padrao da fonte eh de 16px , entao 62.5% de 16 eh 10, logo o tamanho da fonte de html eh de 10 px , todas as outras medias de rem , serao baseadas na fobnt size atual , ou seja 0.1 rem = 1 pixel , e 1 rem = 10 pixels*/
+                scroll-behavior: smooth;
+            }
+            
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 2rem;
+                color: var(--primary-color);
+                line-height: 1.5;
+            }
+            
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: 'Montserrat', sans-serif;
+            }
+            
+            h1 {
+                font-size: 6rem;
+                text-transform: uppercase;
+            }
+            
+            h2 {
+                font-size: 5.5rem;
+            }
+            
+            h3 {
+                font-size: 5rem;
+            }
+            
+            h4 {
+                font-size: 4.5rem;
+            }
+            
+            h5 {
+                font-size: 4rem;
+            }
+            
+            h6 {
+                font-size: 3.5rem;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            p {
+                margin-bottom: 3rem;
+            }
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            
+            table caption {
+                font-style: italic;
+                font-size: 1.6rem;
+                text-align: left;
+                margin-bottom: 1rem;
+            }
+            
+            table td,
+            table th {
+                white-space: nowrap;
+                padding: 0.5rem;
+                text-align: center;
+                border: 0.2rem solid var(--light-gray-color);
+            }
+            
+            tfoot td,
+            table th {
+                background: var(--light-gray-color);
+                color: var(--primary-color);
+            }
+            
+            @media (max-width: 42.5rem) {
+                body .intro-content,
+                body .grid {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+                .gallery-img {
+                    width: 100%;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                .grid-one-content {
+                    display: block;
+                }
+                .menu {
+                    bottom: 0;
+                    text-align: center;
+                }
+                .menu-content,
+                .menu-content ul {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .menu-content {
+                    height: 70vh;
+                }
+                .menu {
+                    display: none;
+                }
+                .close-menu {
+                    position: fixed;
+                    z-index: 2;
+                    top: 0;
+                    left: 0;
+                }
+                .close-menu-label::after {
+                    position: fixed;
+                    content: "☰";
+                    z-index: 2;
+                    top: 2rem;
+                    right: 2rem;
+                    color: var(--white-color);
+                    background-color: var(--secondary-color);
+                    font-size: 3rem;
+                    line-height: 3rem;
+                    width: 3rem;
+                    height: 3rem;
+                    text-align: center;
+                    cursor: pointer;
+                    padding: 1rem;
+                    border: 0.1rem solid var(--white-color);
+                }
+                .close-menu:checked~.menu {
+                    display: block;
+                }
+                .close-menu:checked~.close-menu-label::after {
+                    content: "✖";
+                }
+                .menu-spacing {
+                    display: none;
+                }
+                body .grid h3::before {
+                    left: -2rem;
+                }
+                body .intro-text-content h2 {
+                    font-size: 2rem;
+                    margin-bottom: 3rem;
+                    text-transform: uppercase;
+                    line-height: 1.2;
+                }
+                body .intro-text-content p {
+                    font-size: 1rem;
+                }
+                body .intro-img img {
+                    max-width: 10rem;
+                    min-height: auto;
+                }
+            }
+            /* @media screen and (min-width:381rem) and (max-width:640px) {
+
+
+    } */

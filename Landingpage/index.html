@@ -1,0 +1,297 @@
+<!-- O ato de separar varios arquivos de css eh bom para organizacao , mas quando for deixar o site no ar eh melhor deixar tudo em somente um arquivo , para o site ter que carregar menos arquivos -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page
+    </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/Variables.css">
+    <link rel="stylesheet" href="./assets/elements.css">
+    <link rel="stylesheet" href="./assets/Classes.css">
+    <link rel="stylesheet" href="./assets/menu.css">
+
+</head>
+
+<body class="mainbg">
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu " role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu whitebg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked=false;">
+                <a href="#home">LOGO</a>
+            </h1>
+
+            <nav>
+                <ul onclick="getElementById('close-menu').checked=false;">
+                    <li><a href="#intro">Intro</a>
+                    </li>
+                    <li><a href="#grid-one">GridOne</a>
+                    </li>
+                    <li><a href="#gallery">Gallery</a>
+                    </li>
+                    <li><a href="#pricing">Pricing</a>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </aside>
+
+
+    <div class="menu-spacing">
+    </div>
+
+    <section id="home" class="intro maingbg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+
+                <h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias aperiam quo temporibus natus recusandae! Dolore eveniet, voluptatem vel repudiandae esse temporibus, molestiae ad sed architecto possimus odio corrupti consequatur.
+
+                </p>
+
+            </div>
+            <div class="intro-img">
+                <img src="./assets/img/undraw_staying_in_i80u.svg" alt="Solidao e pizza">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="intro" class="whitebg section">
+        <div class="main-content whitecontent">
+            <h2>Intro
+            </h2>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officia culpa aperiam iure, consequuntur facilis illum voluptates, est adipisci aliquid veniam non soluta earum veritatis assumenda accusamus quo, amet cumque.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ducimus delectus modi laudantium ea neque suscipit accusantium eligendi ad eius! Ad deserunt aliquid cumque accusamus, aspernatur voluptates veritatis eum porro.
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+    <section id="grid-one" class="grid-one mainbg section">
+
+        <div class="main-content grid-one-content">
+
+            <h2 class="grid-mainh">
+                GridOne</h2>
+            <p class="grid-desc">
+                Description
+            </p>
+
+            <div class="grid">
+                <article>
+                    <h3>Test1
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, error, quas quo delectus hic earum minima molestias labore dicta mollitia ullam perspiciatis doloribus sit cum sint similique minus eligendi quam?
+                    </p>
+
+                </article>
+                <article>
+                    <h3>Test2
+                    </h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non minima laboriosam eius facilis mollitia ab assumenda libero incidunt. Quo, maxime? Neque cum eius ut facilis architecto aspernatur vel fugit tenetur!
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="gallery" class="grid-one whitebg section">
+
+        <div class="main-content grid-one-content">
+
+            <h2 class="grid-mainh">
+                Gallery</h2>
+            <p class="grid-desc">
+                Description
+            </p>
+
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash" />
+                </div>
+
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=2" alt="random image from unsplash" />
+
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=3" alt="random image from unsplash" />
+
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=4" alt="random image from unsplash" />
+
+
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=5" alt="random image from unsplash" />
+
+                </div>
+
+
+
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=6" alt="random image from unsplash" />
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <section id="pricing" class="mainbg section">
+        <div class="main-content whitecontent">
+            <h2>Table
+            </h2>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officia culpa aperiam iure, consequuntur facilis illum voluptates, est adipisci aliquid veniam non soluta earum veritatis assumenda accusamus quo, amet cumque.
+            </p>
+            <div class="responsive-table">
+                <table>
+                    <caption>Pricing Table</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Title1</th>
+                            <th>Title2</th>
+                            <th>Title3</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Content1</td>
+                            <td>Content2</td>
+                            <td>Content3</td>
+                        </tr>
+                        <tr>
+                            <td>Content1</td>
+                            <td>Content2</td>
+                            <td>Content3</td>
+                        </tr>
+                        <tr>
+                            <td>Content1</td>
+                            <td>Content2</td>
+                            <td>Content3</td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Testando</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="intro whitebg section">
+        <div class="main-content intro-content">
+
+
+            <div class="contact-form">
+
+                <fieldset class="form-grid">
+                    <legend>Contact me</legend>
+
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="YourName">
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="LastName">
+
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="email" id="email" placeholder="E-Mail">
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+                        <button type="submit">Send Message</button>
+
+                    </div>
+
+                </fieldset>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <footer id="footer" class="footer whitebg">
+        <p><a rel="nofollow" target="-blank" href="#">Page Created <span class="heart">❋</span> by Gabriel Nava</a></p>
+    </footer>
+
+    <a class="back-to-top" href="#">➤</a>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
