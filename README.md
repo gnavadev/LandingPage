@@ -1,3 +1,3 @@
 # LandingPage
 Landing page Example - Mobile version still needs work <br>
-Take a look at the live-test version : https://gnavafirstlandingpage.netlify.app
+Want to take a look? Link for the browser sample : https://gnavafirstlandingpage.netlify.app
